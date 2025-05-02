@@ -3,6 +3,9 @@ import react from '@vitejs/plugin-react';
 import { viteStaticCopy } from 'vite-plugin-static-copy';
 
 export default defineConfig({
+  define: {
+    'chrome': 'chrome' // prevent vite from replacing chrome
+  },
   plugins: [
     react(),
     viteStaticCopy({

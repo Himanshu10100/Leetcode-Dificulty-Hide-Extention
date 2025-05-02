@@ -1,17 +1,17 @@
 {
-    "manifest_version": 3,
-    "name": "Job Auto Fill",
-    "version": "1.0",
-    "action": {
-      "default_popup": "index.html"
-    },
-    "permissions": ["tabs", "scripting", "activeTab"],
-    "content_scripts": [
-      {
-        "matches": ["<all_urls>"],
-        "js": ["content.js"],
-        "run_at": "document_idle"
-      }
-    ]
-  }
-  
+  "manifest_version": 3,
+  "name": "LeetCode Tag Toggle",
+  "version": "1.0",
+  "description": "Toggle difficulty tags (Easy, Medium, Hard) on LeetCode",
+  "permissions": ["scripting", "tabs","storage"],
+  "action": {
+    "default_popup": "index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://leetcode.com/*", "http://leetcode.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
