@@ -1,28 +1,40 @@
+# 🧠 LeetCode Difficulty Tag Hider
+A simple Chrome extension to toggle (hide/show) difficulty levels (`Easy`, `Medium`, `Hard`, `Med.`) on LeetCode problem lists and pages.
+---
 ## 🚀 Getting Started
+Follow these steps to set up and run the Chrome Extension locally:
 
-Follow these steps to set up and run the Chrome Extension:
+### 1. Clone the Repository
+git clone https://github.com/your-username/leetcode-tag-hider.git
+cd leetcode-tag-hider
 
-```bash
-# Clone the repository
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
-
-# Install dependencies
+### 2. Install Dependencies
 npm install
 
-# Build the project (creates the /dist folder)
+### 3. Build the Project
 npm run build
-```
 
-## 🧩 Load the Extension in Chrome
+This will generate a dist/ folder with the final extension build.
 
-1. Open `chrome://extensions/` in your Chrome browser.
-2. Enable **Developer Mode** (toggle in the top right).
-3. Click **Load unpacked**.
-4. Select the `dist/` folder from the project.
+🧩 Load the Extension in Chrome
+    Open chrome://extensions/ in your Chrome browser.
+    Enable Developer Mode (toggle in the top right).
+    Click Load unpacked.
+    Select the dist/ folder from this project.
 
-## ✅ Usage
+✅ Usage
+Visit leetcode.com.
 
-- Open any webpage that contains a form (e.g., job application pages on Naukri, Indeed, etc.).
-- Click your extension icon from the Chrome toolbar.
-- Click the **Auto Fill** button to populate the form automatically.
+Click the extension icon from the Chrome toolbar.
+
+Use the "Hide Difficulty Levels" toggle to show/hide difficulty tags instantly.
+
+The extension remembers your preference using chrome.storage.
+
+✨ Developed By
+Himanshu10100
+
+📦 Features
+Hide or show difficulty tags (Easy, Medium, Hard, Med.) on LeetCode
+Remembers your toggle state even after refresh
+Works across problem list and individual problem pages
